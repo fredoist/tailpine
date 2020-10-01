@@ -1,0 +1,10 @@
+{
+  "name": "tailpine",
+  "version": "1.0.0",
+  "repository": "https://github.com/agonzalezio/tailpine",
+  "author": "Freddy Gonzalez <7684330+agonzlezr@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tailwindcss build -o assets/css/tailwind.css -c tailwind.config.js"
+  }
+}

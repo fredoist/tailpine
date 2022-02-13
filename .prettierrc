@@ -1,0 +1,10 @@
+{
+  "semi": false,
+  "useTabs": false,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "printWidth": 80,
+  "endOfLine": "lf",
+  "tailwindConfig": "./tailwind.config.js"
+}

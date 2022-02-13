@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailpine</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.css?v={% version %}" />
+    <script src="./assets/js/alpine.js?v={% version %}" defer></script>
+  </head>
+  <body class="flex min-h-screen items-center justify-center bg-white">
+    <h1
+      x-data="{ name: 'world' }"
+      x-init="async () => {
+        const req = await fetch('https://jsonplaceholder.typicode.com/users/1');
+        const data = await req.json();
+        name = data.name;
+      }"
+      class="text-5xl font-black text-slate-900"
+    >
+      Hello,
+      <span
+        x-text="name"
+        class="bg-gradient-to-r from-blue-700 via-cyan-500 to-emerald-600 bg-clip-text text-transparent"
+      ></span>
+    </h1>
+  </body>
+</html>

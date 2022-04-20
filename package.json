@@ -6,10 +6,10 @@
     "start": "npm run dev",
     "dev": "npm run clean && npm-run-all --parallel dev:*",
     "dev:eleventy": "eleventy --serve --port=3000",
-    "dev:tailwindcss": "tailwindcss -i node_modules/tailwindcss/tailwind.css -o dist/assets/css/style.css --watch",
+    "dev:tailwindcss": "tailwindcss -i node_modules/tailwindcss/tailwind.css -o dist/tailwind.css --watch",
     "build": "npm run clean && npm-run-all build:*",
     "build:eleventy": "eleventy",
-    "build:tailwindcss": "tailwindcss -i node_modules/tailwindcss/tailwind.css -o dist/assets/css/style.css --minify",
+    "build:tailwindcss": "tailwindcss -i node_modules/tailwindcss/tailwind.css -o dist/tailwind.css --minify",
     "clean": "rimraf dist/",
     "format": "prettier --write .",
     "lint": "eslint --ext .js"

@@ -7,22 +7,12 @@
     <title>Tailpine</title>
     <link rel="stylesheet" href="/tailwind.css?v={% version %}" />
     <script src="/alpine.js?v={% version %}" defer></script>
-  </head>
-  <body class="flex min-h-screen items-center justify-center bg-white">
-    <h1
-      x-data="{ name: 'world' }"
-      x-init="async () => {
-        const req = await fetch('https://jsonplaceholder.typicode.com/users/1');
-        const data = await req.json();
-        name = data.name;
-      }"
-      class="text-5xl font-black text-slate-900"
-    >
-      Hello,
-      <span
-        x-text="name"
-        class="bg-gradient-to-r from-blue-700 via-cyan-500 to-emerald-600 bg-clip-text text-transparent"
-      ></span>
-    </h1>
+  </head> 
+  <body class="flex min-h-screen items-center justify-center bg-gradient-to-b from-black via-black to-yellow-900 text-white">
+    <main class="max-w-3xl flex flex-col items-center justify-center text-center gap-4 p-4">
+      <h1 class="text-2xl lg:text-5xl font-bold mb-2">Beautiful UI components crafted with Tailwind CSS and Alpine.js</h1>
+      <p class="lg:text-lg">Make web interfaces using pre-built code snippets crafted with the Tailwind CSS framework and Alpine.js for simple, customizable, and interactive UI components that you can copy-paste to your projects.</p>
+      <a class="block py-3 px-4 bg-white text-black rounded-xl font-semibold" href="https://github.com/fredoist/tailpine">Watch the repo for releases</a>
+    </main>
   </body>
 </html>

@@ -1,0 +1,132 @@
+---
+import ArrowRight from '../components/icons/ArrowRight.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Tailpine - Beautifully designed UI components using Tailwind CSS and Alpine.js</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+  <body class="bg-white text-gray-800 font-sans leading-tight antialiased">
+    <div
+      class="p-3 bg-white/80 ring-1 ring-black/5 backdrop-blur sticky top-0 inset-x-0 border-t border-lime-500 z-50"
+    >
+      <header class="max-w-5xl mx-auto flex items-center justify-between">
+        <a href="#0" class="inline-flex items-center text-lg">
+          <img src="/favicon.svg" alt="Icon" class="w-8 h-8" />
+          <span class="font-semibold">Tailpine</span>
+        </a>
+        <nav
+          class="flex items-center gap-4 [&>a]:text-gray-500 [&>a:hover]:text-gray-800"
+        >
+          <a href="#0">Docs</a>
+          <a href="#0">Components</a>
+          <a
+            href="#0"
+            class="!text-transparent bg-gradient-to-r from-lime-600 to-lime-800 bg-clip-text font-semibold inline-flex items-center gap-1 group cursor-not-allowed"
+          >
+            <span>Studio</span>
+            <ArrowRight />
+          </a>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <section class="py-10 md:py-20 px-5 bg-gray-50 overflow-hidden relative">
+        <div class="max-w-5xl mx-auto relative z-10">
+          <h1 class="text-2xl md:text-3xl lg:text-5xl font-semibold max-w-4xl">
+            Beautifully designed UI components using
+            <span class="font-black">Tailwind CSS</span>
+            and
+            <span class="font-black">Alpine.js</span>
+          </h1>
+        </div>
+
+        <svg
+          viewBox="0 0 900 600"
+          width="900"
+          height="600"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          class="absolute -left-64 -top-80 blur-3xl scale-75 text-lime-600/30"
+        >
+          <g transform="translate(454.3309877727316 281.5814013432008)">
+            <path
+              d="M173.2 -176.6C210.2 -136.2 216.1 -68.1 205 -11.1C194 46 165.9 91.9 128.9 141.9C91.9 191.9 46 246 -9.4 255.4C-64.8 264.8 -129.6 229.6 -170.5 179.6C-211.3 129.6 -228.2 64.8 -213.4 14.7C-198.7 -35.4 -152.4 -70.7 -111.5 -111C-70.7 -151.4 -35.4 -196.7 16.4 -213.1C68.1 -229.5 136.2 -216.9 173.2 -176.6"
+              fill="currentColor"></path>
+          </g>
+        </svg>
+
+        <svg
+          viewBox="0 0 900 600"
+          width="900"
+          height="600"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          class="absolute -right-64 top-16 blur-3xl scale-90 text-lime-600/30"
+        >
+          <g transform="translate(454.3309877727316 281.5814013432008)">
+            <path
+              d="M173.2 -176.6C210.2 -136.2 216.1 -68.1 205 -11.1C194 46 165.9 91.9 128.9 141.9C91.9 191.9 46 246 -9.4 255.4C-64.8 264.8 -129.6 229.6 -170.5 179.6C-211.3 129.6 -228.2 64.8 -213.4 14.7C-198.7 -35.4 -152.4 -70.7 -111.5 -111C-70.7 -151.4 -35.4 -196.7 16.4 -213.1C68.1 -229.5 136.2 -216.9 173.2 -176.6"
+              fill="currentColor"></path>
+          </g>
+        </svg>
+      </section>
+      <section
+        class="p-5 sticky top-14 inset-x-0 bg-white/80 backdrop-blur ring-1 ring-black/5 z-40"
+      >
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+          <div class="flex items-center gap-6 [&>a]:text-gray-500 [&>a:hover]:text-gray-800">
+            <a href="#0">Marketing</a>
+            <a href="#0">Application UI</a>
+            <a href="#0">Commerce</a>
+          </div>
+
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-500 hover:text-gray-800">
+              <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="px-5 py-10">
+				<div class="max-w-5xl mx-auto mb-5">
+					<h2 class="text-lg font-semibold">Marketing</h2>
+					<span class="text-sm text-gray-500">Pricing tables, heroes, feature sections, forms - everything you need to design beautiful landing pages</span>
+				</div>
+        <div class="max-w-5xl mx-auto [&>p]:my-4 grid gap-5 md:grid-cols-3">
+          {Array.from({length: 3}).map((_, k) => (
+            <article class="p-5 rounded-xl ring-1 ring-black/5 shadow-sm h-48 bg-gray-300 animate-pulse" />
+          ))}
+        </div>
+			</section>
+      <section class="px-5 py-10">
+				<div class="max-w-5xl mx-auto mb-5">
+					<h2 class="text-lg font-semibold">Application UI</h2>
+					<span class="text-sm text-gray-500">Modals, data tables, layouts, buttons - all-things application components</span>
+				</div>
+        <div class="max-w-5xl mx-auto [&>p]:my-4 grid gap-5 md:grid-cols-3">
+          {Array.from({length: 3}).map((_, k) => (
+            <article class="p-5 rounded-xl ring-1 ring-black/5 shadow-sm h-48 bg-gray-300 animate-pulse" />
+          ))}
+        </div>
+			</section>
+      <section class="px-5 py-10">
+				<div class="max-w-5xl mx-auto mb-5">
+					<h2 class="text-lg font-semibold">Ecommerce</h2>
+					<span class="text-sm text-gray-500">Product cards, shopping carts, layouts - build awesome ecommerce websites</span>
+				</div>
+        <div class="max-w-5xl mx-auto [&>p]:my-4 grid gap-5 md:grid-cols-3">
+          {Array.from({length: 3}).map((_, k) => (
+            <article class="p-5 rounded-xl ring-1 ring-black/5 shadow-sm h-48 bg-gray-300 animate-pulse" />
+          ))}
+        </div>
+			</section>
+    </main>
+    <footer class="bg-gray-800 h-48"></footer>
+  </body>
+</html>
